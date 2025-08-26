@@ -66,7 +66,3 @@ docker-compose up --build
 
 ---
 
-## 📄 Licenca
-Ovaj projekt je objavljen pod **MIT licencom**.
-
-👤 Autor: _[upiši svoje ime ili GitHub profil]_
