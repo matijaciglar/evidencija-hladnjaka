@@ -1,20 +1,27 @@
-# Evidencija hladnjaka
+# 🧊 Evidencija hladnjaka
 
-Ovo je web aplikacija za vođenje evidencije o namirnicama u hladnjaku.
+Ovo je web aplikacija za vođenje evidencije o namirnicama u hladnjaku.  
+Omogućuje jednostavno praćenje, uređivanje i vizualizaciju namirnica.
 
-## Funkcionalnosti
-- Dodavanje, uređivanje i brisanje namirnica (CRUD)
-- Pregled svih namirnica
-- Pregled namirnica kojima uskoro ističe rok trajanja (≤ 3 dana)
-- Vizualizacija podataka (Chart.js)
-- Frontend izrađen u HTML + Bootstrap
-- Backend izrađen u Python (Flask + PonyORM + SQLite)
-- Docker podrška
+---
 
-## Pokretanje lokalno
+## 🚀 Funkcionalnosti
+- ➕ Dodavanje, ✏️ uređivanje i ❌ brisanje namirnica (CRUD)
+- 📋 Pregled svih namirnica
+- ⏰ Prikaz namirnica kojima uskoro ističe rok trajanja (≤ 3 dana)
+- 📊 Grafička vizualizacija podataka (Chart.js)
+- 💻 Frontend: **HTML + Bootstrap**
+- ⚙️ Backend: **Python (Flask + PonyORM + SQLite)**
+- 🐳 Docker podrška
 
+---
+
+## ⚡ Brzi početak
+
+### Pokretanje lokalno
 ```bash
 python -m venv venv
+# Aktivacija virtualnog okruženja
 venv\Scripts\activate   # Windows
 source venv/bin/activate  # Linux/Mac
 
@@ -22,27 +29,44 @@ pip install -r zahtjevi.txt
 python aplikacija.py
 ```
 
-Otvorite preglednik na: [http://localhost:5000](http://localhost:5000)
+Aplikacija će biti dostupna na: 👉 [http://localhost:5000](http://localhost:5000)
 
-## Pokretanje pomoću Dockera
+---
 
+### Pokretanje pomoću Dockera
 ```bash
 docker build -t evidencija-hladnjaka .
 docker run -p 5000:5000 evidencija-hladnjaka
 ```
 
-Ili pomoću docker-compose:
-
+Ili pomoću **docker-compose**:
 ```bash
 docker-compose up --build
 ```
 
-## Use Case opis
+---
 
-- Korisnik može dodati novu namirnicu s nazivom, kategorijom, količinom i rokom trajanja
-- Korisnik može pregledati sve unesene namirnice
-- Korisnik može brisati ili uređivati postojeće namirnice
-- Sustav može prikazati namirnice kojima rok ističe unutar 3 dana
-- Sustav prikazuje grafikon količina namirnica po kategorijama
+## 📝 Use Case opis
+- Korisnik može dodati novu namirnicu s nazivom, kategorijom, količinom i rokom trajanja  
+- Korisnik može pregledati sve unesene namirnice  
+- Korisnik može brisati ili uređivati postojeće namirnice  
+- Sustav prikazuje namirnice kojima rok ističe unutar 3 dana  
+- Sustav prikazuje grafikon količina namirnica po kategorijama  
 
-👉 Use Case dijagram nacrtati u Lucidchartu na temelju ovog opisa.
+---
+
+## 📦 Tehnologije
+- Python 3.x  
+- Flask  
+- PonyORM  
+- SQLite  
+- Chart.js  
+- Bootstrap  
+- Docker / Docker Compose  
+
+---
+
+## 📄 Licenca
+Ovaj projekt je objavljen pod **MIT licencom**.
+
+👤 Autor: _[upiši svoje ime ili GitHub profil]_
